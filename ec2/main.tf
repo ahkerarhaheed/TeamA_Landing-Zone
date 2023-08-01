@@ -9,7 +9,7 @@ resource "aws_instance" "Linux-Bastion" {
         "Name"            = "Linux-Bastion"
     }
 }
-
+#Window server resource
 resource "aws_instance" "Windows-Bastion" {
   ami           = "ami-04132f301c3e4f138" 
   instance_type = "t2.micro"
