@@ -21,3 +21,15 @@ resource "aws_instance" "Windows-Bastion" {
         "Name"            = "Windows-Bastion"
     }
 }
+
+resource "aws_instance" "team-a-linux-server-1"{
+  ami                                  = "ami-0952aa75e3e5fe3ee"
+  instance_type                        = "c5.large"
+  
+  tags                                 = {
+        "Account"         = "EC2"
+        "CreatedBy"       = "mgn.amazonaws.com"
+        "EnvironmentType" = "prod"
+        "Name"            = "team-a-linux-server-1"
+    }
+}
